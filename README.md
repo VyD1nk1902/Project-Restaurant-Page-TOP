@@ -15,9 +15,6 @@ This is a small project by TOP – a restaurant page inspired by Ratatouille car
 - 🏠 Tab Navigation:
   Smoothly switch between Home, Menu, and About tabs without reloading the page.
 
-- 📱 Responsive Design:
-  Interface adapts beautifully to all devices—desktop, tablet, and mobile.
-
 - 🎨 Artistic Borders & Custom Layout:
   Features decorative borders, elegant fonts, and a Remy mascot for authentic Ratatouille vibes.
 
