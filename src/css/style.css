@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "France Restaurant";
+  src: url(../font/CroissantOne-Regular.otf) format("opentype"),
+    url(../font/CroissantOne-Regular.ttf) format("truetype");
+}
+
+:root {
+  --button-color: rgb(255, 99, 96);
+  --background: rgb(255, 235, 196);
+  --background-footer: #f5e1a4;
+  --text-color: #fff;
+  --font-family: "Open Sans", sans-serif;
+  --font-family-2: "France Restaurant", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* NavBar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.btn {
+  padding: 0.5rem;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100px;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  padding: 12px 14px;
+  color: var(--text-color);
+  font-family: var(--font-family-2);
+}
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+/* HomePage */
+.img {
+  background-image: url("../img/4k-ratatouille-animationscreencaps.com-17290.webp");
+  min-height: 450px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  text-align: center;
+  font-family: var(--font-family-2);
+}
+
+.para-wrap {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.home-para {
+  padding: 20px;
+  font-family: var(--font-family);
+  white-space: pre-line;
+}
+
+/* MenuPage */
+
+.menu-border {
+  background-image: url(../img/menu-border-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Luôn kéo khung ra sát 4 cạnh */
+  max-width: 50vw; /* hoặc max-width: 90vw; */
+  margin: 32px auto;
+  min-height: 80vh; /* tùy ý, hoặc bỏ nếu không cần chiều cao tối thiểu */
+  padding: 70px 0;
+}
+
+.menu-title,
+.sub-title {
+  font-family: var(--font-family-2);
+  text-align: center;
+}
+
+.menu-wrap {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  gap: 30px;
+}
+
+.menu-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+  text-align: end;
+}
+
+.dish-list {
+  text-align: end;
+}
+
+.menu-right {
+  background-image: url(../img/remy-removebg-preview.png);
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* AboutPage */
+.about-background {
+  background-image: url(../img/about.jpg);
+  width: 100vw;
+  min-height: 60vh;
+  margin: auto;
+  margin-top: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-wrap {
+  width: 50%;
+  margin: 50px auto;
+  font-family: var(--font-family);
+  white-space: pre-line;
+}
+
+.about-title {
+  font-family: var(--font-family-2);
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: var(--background-footer);
+  padding: 10px 0;
+  justify-items: center;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+.footer-left,
+.footer-right {
+  background-color: var(--background-footer);
+  padding: 10px;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left a:hover {
+  color: white;
+}
+
+.form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-right input {
+  padding: 10px;
+  width: 50%;
+  border-radius: 8px;
+  border: 1px solid;
+  margin: 5px 0;
+}
+
+.btn-footer {
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  padding: 10px 15px;
+}
