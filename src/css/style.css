@@ -40,14 +40,10 @@ body {
   font-family: var(--font-family-2);
 }
 .btn:hover,
-.btn:active {
+.btn.active {
   background-color: initial;
   background-position: 0 0;
   color: #ff4742;
-}
-
-.btn:active {
-  opacity: 0.5;
 }
 
 /* HomePage */
